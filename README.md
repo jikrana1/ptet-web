@@ -1,9 +1,11 @@
-# 📚 PTET Static Website
+## 📚 PTET Static Website
 
-Welcome to the **PTET Static Website** repository! This is a lightweight, responsive, and highly user-friendly static website designed to provide comprehensive, easy-to-access information regarding the **Pre-Teacher Education Test (PTET)**.
+Welcome to the PTE Static Website. This platform is designed to provide aspirants with accurate, up-to-date, and easy-to-navigate information about the PTE Academic examination, including eligibility criteria, exam patterns, important dates, scoring system, and preparation tips. 
 
 <div align="center">
-    <img width="500" height=auto alt="image" src="https://github.com/user-attachments/assets/1a9628bb-2662-42e8-b307-9d31024b8f8a" />
+    <img width="500" height=auto alt="image" src="assets/images/Australia_university.jpg" />
+     <img width="500" height=auto alt="image" src="assets/images/canada.jpg" alt="Canada" />
+     
 </div>
 <br>
 All source code, stylesheets, and visual assets required to run this project are completely self-contained within this repository.
