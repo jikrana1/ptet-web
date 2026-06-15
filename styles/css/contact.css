@@ -903,3 +903,52 @@
         text-transform: uppercase;
     }
 }
+
+/* ==========================================================================
+   DARK THEME OVERRIDES
+   ========================================================================== */
+[data-theme="dark"] .contact-hero {
+    background: linear-gradient(135deg, var(--bg-about-hero-start) 0%, var(--bg-about-hero-end) 100%);
+    border-bottom: 1px solid var(--border-card);
+}
+[data-theme="dark"] .contact-hero h1 { color: var(--text-primary); }
+[data-theme="dark"] .contact-hero p { color: var(--text-secondary); }
+[data-theme="dark"] .contact-hero .mascot-speech {
+    background: var(--bg-popup);
+    border: 1px solid var(--border-card);
+    color: var(--text-primary);
+}
+[data-theme="dark"] .contact-hero .mascot-speech::after {
+    border-color: transparent transparent transparent var(--bg-popup);
+}
+[data-theme="dark"] .contact-section { background-color: var(--bg-primary); }
+[data-theme="dark"] .contact-info-column h3,
+[data-theme="dark"] .contact-form-panel h2 { color: var(--text-primary); }
+[data-theme="dark"] .info-desc { color: var(--text-secondary); }
+[data-theme="dark"] .info-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+}
+[data-theme="dark"] .info-card h4, [data-theme="dark"] .card-content h3 { color: var(--text-primary); }
+[data-theme="dark"] .info-card p,
+[data-theme="dark"] .info-card a { color: var(--text-secondary); }
+[data-theme="dark"] .info-card a:hover { color: var(--text-primary); }
+[data-theme="dark"] .contact-faq-cta {
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+}
+[data-theme="dark"] .contact-faq-cta h4 { color: var(--text-primary); }
+[data-theme="dark"] .contact-faq-cta p { color: var(--text-secondary); }
+[data-theme="dark"] .contact-form-panel {
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+}
+[data-theme="dark"] .form-group label { color: var(--text-secondary); }
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea {
+    background-color: var(--bg-input);
+    border-color: var(--border-input);
+    color: var(--text-primary);
+}
+[data-theme="dark"] .form-group input:focus,
+[data-theme="dark"] .form-group textarea:focus { background-color: var(--bg-input-focus); }
