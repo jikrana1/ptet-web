@@ -7,7 +7,7 @@ require('dotenv').config();
 const app = require('./src/app');
 const { connectDB } = require('./src/config/db');
 const mongoose = require('mongoose');
-const setupGracefulShutdown = require("./src/utils/gracefulshutdown");
+const registerProcessHandlers = require("./src/utils/processHandlers");
 
 const PORT = process.env.PORT || 5000;
 
@@ -24,19 +24,7 @@ connectDB().then(() => {
 const validateEnv = require("./src/config/validateEnv");
 validateEnv();
 
-
-
-// ==================== UNHANDLED REJECTIONS & EXCEPTIONS ====================
-process.on('unhandledRejection', (reason, promise) => {
-  console.error('Unhandled Rejection at:', promise);
-  console.error('Reason:', reason);
-});
-
-process.on('uncaughtException', (error) => {
-  console.error('Uncaught Exception:', error);
-  console.error('Stack:', error.stack);
-  process.exit(1);
-});
+registerProcessHandlers();
 
 // ==================== REGISTER MODELS ====================
 // Register models before connecting to DB so they get synced
